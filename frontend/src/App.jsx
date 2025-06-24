@@ -39,22 +39,25 @@ function App() {
 
   function initClient() {
     window.gapi.client
-      .init({
+        .init({
         apiKey: API_KEY,
         clientId: CLIENT_ID,
         discoveryDocs: DISCOVERY_DOCS,
         scope: SCOPES,
-      })
-      .then(() => {
+        })
+        .then(() => {
         const authInstance = window.gapi.auth2.getAuthInstance();
         setSignedIn(authInstance.isSignedIn.get());
-        authInstance.isSignedIn.listen(setSignedIn);
+        console.log("Signed in?", authInstance.isSignedIn.get());
+        authInstance.isSignedIn.listen((isSignedIn) => {
+            setSignedIn(isSignedIn);
+            console.log("Sign-in state changed:", isSignedIn);
+        });
         if (authInstance.isSignedIn.get()) {
-          fetchEvents();
+            fetchEvents();
         }
-      });
-  }
-
+        });
+    }
   function handleSignIn() {
     window.gapi.auth2.getAuthInstance().signIn();
   }
