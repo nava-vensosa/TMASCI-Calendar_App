@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CalendarView from './CalendarView';
-import ButtonGroup ;
-import HedgeListModal from './components/HedgeListModal';
+import ButtonGroup from './components';
+import HedgeListModal from './';
 import ProposeHedgeForm from './components/ProposeHedgeForm';
 
 function App() {
