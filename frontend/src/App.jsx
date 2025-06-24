@@ -5,8 +5,8 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import "./theme.css";
 
 // TODO: Replace these with your actual credentials from Google Cloud Console
-const CLIENT_ID = "YOUR_CLIENT_ID.apps.googleusercontent.com";
-const API_KEY = "YOUR_API_KEY";
+const CLIENT_ID = "894098063223-kp5v311v88ie86tooluu494vuhnvvvn4.apps.googleusercontent.com";
+const API_KEY = "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";
 const DISCOVERY_DOCS = [
   "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",
 ];
