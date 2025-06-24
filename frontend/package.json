@@ -1,0 +1,32 @@
+{
+  "name": "lab-calendar-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A dark-themed lab calendar app using React and react-big-calendar.",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "formik": "^2.4.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-big-calendar": "^1.11.4",
+    "react-modal": "^3.16.1",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }

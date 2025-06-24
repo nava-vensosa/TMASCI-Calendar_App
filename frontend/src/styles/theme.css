@@ -1,0 +1,118 @@
+:root {
+  --background: #181a1b;
+  --surface: #23272a;
+  --primary: #4f8cff;
+  --secondary: #23272a;
+  --accent: #ffb347;
+  --text: #f5f6fa;
+  --text-secondary: #b0b3b8;
+  --border: #31363b;
+  --modal-bg: #23272aee;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+button {
+  background: var(--primary);
+  color: var(--text);
+  border: none;
+  border-radius: 4px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 0.5em;
+  transition: background 0.2s;
+}
+
+button:hover, button:focus {
+  background: var(--accent);
+  color: var(--surface);
+}
+
+#root {
+  min-height: 100vh;
+  background: var(--background);
+}
+
+.split-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top-half {
+  flex: 1 1 50%;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  overflow: auto;
+}
+
+.bottom-half {
+  flex: 1 1 50%;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: var(--modal-bg);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 2em;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.5);
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea, select {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+label {
+  color: var(--text-secondary);
+  margin-bottom: 0.2em;
+  display: block;
+}
+
+.react-big-calendar {
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 1em;
+}
+
+.rbc-event {
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.95em;
+}
+
+.rbc-event-user {
+  opacity: 0.7;
+  background: var(--primary);
+}
+
+.rbc-event-lab {
+  opacity: 1;
+  background: var(--accent);
+  color: #23272a;
+}
