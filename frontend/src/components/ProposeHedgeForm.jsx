@@ -67,3 +67,5 @@ const ProposeHedgeForm = ({ onClose }) => (
     </Formik>
   </Modal>
 );
+
+export default ProposeHedgeForm;
