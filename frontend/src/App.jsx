@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import CalendarView from './src/components/CalendarView';
-import ButtonGroup from './src/components/ButtonGroup';
-import HedgeListModal from './src/components/HedgeListModal';
-import ProposeHedgeForm from './src/components/ProposeHedgeForm';
+import CalendarView from './components/CalendarView';
+import ButtonGroup from './components/ButtonGroup';
+import HedgeListModal from './components/HedgeListModal';
+import ProposeHedgeForm from './components/ProposeHedgeForm';
 
 function App() {
   const [showHedgeList, setShowHedgeList] = useState(false);
